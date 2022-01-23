@@ -8,7 +8,7 @@ public class Main {
     public static boolean isLeapYear(int year) {
         return (year % 4 == 0) && (year % 100 !=0) || (year % 400 == 0);
     }
-    public static void printIsLeapYear(int year) {
+    private static void printIsLeapYear(int year) {
         if (isLeapYear(year)) {
             System.out.println("номер года — " + year + " високосный год");
         } else {
@@ -40,7 +40,7 @@ public class Main {
      } else if(distance > 20 && distance <= 60) {
          System.out.println("Потребуется дней " + ++deliveryDay);
       } else if (distance > 60 && distance <= 100) {
-        System.out.println("Потребуется дней " + (++deliveryDay + 1));
+        System.out.println("Потребуется дней " + (deliveryDay + 2));
         }
       return(deliveryDay);
       }
